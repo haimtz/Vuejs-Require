@@ -1,0 +1,28 @@
+﻿<template>
+    <div>
+        <div>
+            {{text}}
+            <div>
+                <input v-model="text" />
+            </div>
+        </div>
+        <input v-model="text" />
+    </div>
+</template>
+
+<script>
+    define(["Vue"], function (Vue) {
+        return Vue.extend({
+            template: template, // the variable template will be injected
+            data: function () {
+                return { "text": "Ok Compponent" };
+            },
+            methods: {
+                clickfunc: function (a, b) {
+                    var x = this;
+                    debugger;
+                }
+            }
+        });
+    });
+</script>
